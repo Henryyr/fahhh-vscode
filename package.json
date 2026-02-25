@@ -1,0 +1,78 @@
+{
+  "name": "fahhh-error-sound",
+  "displayName": "FAHHH! Error Sound",
+  "description": "Plays a dramatic FAHHH sound when errors or test failures are detected 💥",
+  "version": "1.0.0",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "error",
+    "sound",
+    "notification",
+    "test",
+    "fun"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "FAHHH! Error Sound",
+      "properties": {
+        "fahhh.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable FAHHH sound on errors"
+        },
+        "fahhh.volume": {
+          "type": "number",
+          "default": 1,
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Volume of the FAHHH sound (0.0 - 1.0)"
+        },
+        "fahhh.triggerOnDiagnostics": {
+          "type": "boolean",
+          "default": true,
+          "description": "Play sound on diagnostic errors (red squiggles)"
+        },
+        "fahhh.triggerOnTestFailure": {
+          "type": "boolean",
+          "default": true,
+          "description": "Play sound on test failures"
+        },
+        "fahhh.cooldownMs": {
+          "type": "number",
+          "default": 2000,
+          "description": "Minimum milliseconds between sound plays (cooldown)"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "fahhh.test",
+        "title": "FAHHH! Test Sound"
+      },
+      {
+        "command": "fahhh.toggle",
+        "title": "FAHHH! Toggle On/Off"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0"
+  }
+}
