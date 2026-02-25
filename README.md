@@ -1,4 +1,4 @@
-# 💥 FAHHH! Error Sound — VS Code Extension
+# FAHHH! Error Sound — VS Code Extension
 
 > **Plays a dramatic "FAHHH" sound when errors or test failures are detected.**
 > Because silent failures are boring. Be notified with DRAMA.
@@ -7,11 +7,11 @@
 
 ## Features
 
-- 🔴 **Diagnostic Errors** — Plays sound when new red-squiggle errors appear in your code
-- 🧪 **Test Failures** — Plays sound when test tasks exit with non-zero code
-- 🖥️ **Terminal Watcher** — Detects common failure patterns in terminal output
-- 🎚️ **Configurable** — Volume, cooldown, and per-trigger toggles
-- 💥 **Status Bar Button** — Click to test the sound anytime
+- **Diagnostic Errors** — Plays sound when new red-squiggle errors appear in your code
+- **Test Failures** — Plays sound when test tasks exit with non-zero code
+- **Terminal Watcher** — Detects common failure patterns in terminal output
+- **Configurable** — Volume, cooldown, and per-trigger toggles
+- **Status Bar Button** — Click to test the sound anytime
 
 ---
 
@@ -92,4 +92,4 @@ The sound is **synthesized in pure code** — no audio files bundled. It generat
 
 ## License
 
-MIT — Make all the FAHHH noise you want 💥
+MIT — Make all the FAHHH noise you want
